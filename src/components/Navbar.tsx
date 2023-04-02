@@ -29,14 +29,26 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleShadow = () => {
-      if (window.scrollY >= 90) {
-        setShadow(true);
-      } else {
+      if (router.asPath === "/kegtracker" || router.asPath === "/acwtc") {
         setShadow(false);
+        const viewportHeight = window.innerHeight;
+        if (window.scrollY >= viewportHeight * 0.24) {
+          setLinkColor("#1f2937");
+        } else {
+          setLinkColor("#ecf0f3");
+        }
+      } else {
+        if (window.scrollY >= 90) {
+          setLinkColor("#1f2937");
+          setShadow(true);
+        } else {
+          setLinkColor("#1f2937");
+          setShadow(false);
+        }
       }
     };
     window.addEventListener("scroll", handleShadow);
-  }, []);
+  }, [router]);
 
   return (
     <div
@@ -99,7 +111,7 @@ const Navbar = () => {
             onClick={handleNav}
             className=" mr-2 md:hidden rounded-full p-3 cursor-pointer hover:bg-black/10 active:scale-95 ease-in duration-100"
           >
-            <AiOutlineMenu size={25} />
+            <AiOutlineMenu style={{ color: `${linkColor}` }} size={25} />
           </div>
         </div>
       </div>
