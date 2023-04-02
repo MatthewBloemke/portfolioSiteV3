@@ -26,9 +26,9 @@ const kegtracker = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            This is a project I have been developing for Four Daughters Winery.
-            It is meant to track the shipment of Kegs, to and from distributors,
-            and collect relevant data to display. Click the button below to view
+            This is a project I have been developing for a local winery. It is
+            meant to track the shipment of Kegs, to and from distributors, and
+            collect relevant data to display. Click the button below to view
             screenshots of the website. Access cannot be granted to view the
             site as it contains company data.
           </p>
