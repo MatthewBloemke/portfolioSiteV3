@@ -20,6 +20,10 @@ const About = () => {
             everyday.
           </p>
           <p className="py-2 text-gray-600">
+            I currently work as a Jr .NET Developer for Select Custom Solutions
+            in La Crosse, WI.  
+          </p>
+          <p className="py-2 text-gray-600">
             Beyond coding, I am a hardworking, driven individual. I enjoy a
             challenge and love solving problems. I am a great team player and
             have a very positive outlook on difficult tasks, which makes work a

@@ -8,6 +8,7 @@ import tsImg from "../../public/assets/skills/typescript.png";
 import githubImg from "../../public/assets/skills/github1.png";
 import nodeImg from "../../public/assets/skills/node.png";
 import postgresImg from "../../public/assets/skills/Postgresql.png";
+import csharp from "../../public/assets/skills/csharp.png";
 
 const Skills = () => {
   return (
@@ -102,6 +103,17 @@ const Skills = () => {
               </div>
               <div className="flex flex-col justify-center items-center">
                 <h3>PostgreSQL</h3>
+              </div>
+            </div>
+          </div>
+
+          <div className="py-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image src={csharp} alt="/" width={64} height={64} />
+              </div>
+              <div className="flex flex-col justify-center items-center">
+                <h3>C#</h3>
               </div>
             </div>
           </div>

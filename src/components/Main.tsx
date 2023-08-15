@@ -17,7 +17,7 @@ const Main = () => {
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
             {"I'm"} a full-stack developer specializing in building React
             applications. Currently, I am focusing on building typescript-based
-            front-end applications while learning Python back-end technologies.
+            front-end applications with C# back-end technologies.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
