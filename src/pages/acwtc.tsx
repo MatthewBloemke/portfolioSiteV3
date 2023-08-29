@@ -26,7 +26,7 @@ const acwtc = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            This is a project I have been developing to use with the game series
+            This is a project I have created to use with the game series
             Animal Crossing by Nintendo. The game has a calendar year and time,
             and bugs and fish will appear in game based on the season and time
             of day. This App takes that info, and takes the {"computer's"} local
@@ -52,13 +52,13 @@ const acwtc = () => {
                 <RiRadioButtonFill className="pr-1" /> React
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Javascript
+                <RiRadioButtonFill className="pr-1" /> Typescript
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> CSS
+                <RiRadioButtonFill className="pr-1" /> TailwindCSS
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Digital Ocean
+                <RiRadioButtonFill className="pr-1" /> NextJS
               </p>
             </div>
           </div>
