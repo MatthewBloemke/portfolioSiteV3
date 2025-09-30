@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-import acImg from '../../public/assets/projects/acwtc.png';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
@@ -12,7 +11,7 @@ const acwtc = () => {
         <Image
           className="absolute z-1"
           fill
-          src={acImg}
+          src="/assets/projects/acwtc.png"
           alt="/"
           style={{ objectFit: 'cover' }}
         />
