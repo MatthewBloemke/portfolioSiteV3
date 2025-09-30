@@ -1,8 +1,8 @@
-import Image from "next/image";
-import React from "react";
-import acImg from "../../public/assets/projects/acwtc.png";
-import { RiRadioButtonFill } from "react-icons/ri";
-import Link from "next/link";
+import Image from 'next/image';
+import React from 'react';
+import acImg from '../../public/assets/projects/acwtc.png';
+import { RiRadioButtonFill } from 'react-icons/ri';
+import Link from 'next/link';
 
 const acwtc = () => {
   return (
@@ -14,7 +14,7 @@ const acwtc = () => {
           fill
           src={acImg}
           alt="/"
-          style={{ objectFit: "cover" }}
+          style={{ objectFit: 'cover' }}
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
           <h2 className="py-2">Animal Crossing: {"What's"} the Catch?</h2>
@@ -26,15 +26,15 @@ const acwtc = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            This is a project I have created to use with the game series
-            Animal Crossing by Nintendo. The game has a calendar year and time,
-            and bugs and fish will appear in game based on the season and time
-            of day. This App takes that info, and takes the {"computer's"} local
+            This is a project I have created to use with the game series Animal
+            Crossing by Nintendo. The game has a calendar year and time, and
+            bugs and fish will appear in game based on the season and time of
+            day. This App takes that info, and takes the {"computer's"} local
             time, (as most people set the in game time to match their local
             time) and displays only the bugs and fish that can be caught at that
             time.
           </p>
-          <a href="https://animalcrossingwtc.com" target="_blank">
+          <a href="https://animalcrossingwtc2.vercel.app/" target="_blank">
             <button className="px-8 py-2 mt-4 mr-8">Demo</button>
           </a>
           <a
