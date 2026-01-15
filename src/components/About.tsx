@@ -1,9 +1,28 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import homeImg from "../../public/assets/HomeImage.jpg";
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import homeImg from '../../public/assets/HomeImage.jpg';
+
+const getAge = (birthDate: Date): number => {
+  const today = new Date();
+  let age = today.getFullYear() - birthDate.getFullYear();
+
+  const hasHadBirthdayThisYear =
+    today.getMonth() > birthDate.getMonth() ||
+    (today.getMonth() === birthDate.getMonth() &&
+      today.getDate() >= birthDate.getDate());
+
+  if (!hasHadBirthdayThisYear) {
+    age--;
+  }
+
+  return age;
+};
 
 const About = () => {
+  const birthDate = new Date(1998, 7, 21);
+  const age = getAge(birthDate);
+
   return (
     <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
@@ -13,7 +32,7 @@ const About = () => {
           </p>
           <h2 className="py-4">Who I am</h2>
           <p className="py-2 text-gray-600">
-            I am a 24-year old software developer. I currently live in
+            I am a {age} year old software developer. I currently live in
             Wisconsin. I am a graduate from Thinkful, a coding boot camp, where
             I learned how to write programs with Javascript. I know a few other
             other languages and technologies, and have been learning more
@@ -21,7 +40,7 @@ const About = () => {
           </p>
           <p className="py-2 text-gray-600">
             I currently work as a Jr .NET Developer for Select Custom Solutions
-            in La Crosse, WI.  
+            in La Crosse, WI.
           </p>
           <p className="py-2 text-gray-600">
             Beyond coding, I am a hardworking, driven individual. I enjoy a
@@ -43,7 +62,7 @@ const About = () => {
             alt="/"
             width={500}
             height={500}
-            style={{ height: "auto", width: "auto" }}
+            style={{ height: 'auto', width: 'auto' }}
           />
         </div>
       </div>
