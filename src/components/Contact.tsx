@@ -1,20 +1,20 @@
-import React, { useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { AiOutlineMail } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { HiOutlineChevronDoubleUp } from "react-icons/hi";
-import { send } from "@emailjs/browser";
-import contactImg from "../../public/assets/contact.jpg";
-import Alert from "./Alert";
-import Error from "./Error";
+import React, { useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { AiOutlineMail } from 'react-icons/ai';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
+import { send } from '@emailjs/browser';
+import contactImg from '../../public/assets/contact.jpg';
+import Alert from './Alert';
+import Error from './Error';
 
 const initialState = {
-  name: "",
-  number: "",
-  email: "",
-  subject: "",
-  message: "",
+  name: '',
+  number: '',
+  email: '',
+  subject: '',
+  message: '',
 };
 
 const Contact = () => {
@@ -32,10 +32,10 @@ const Contact = () => {
   const handleSubmit = (event: any) => {
     event.preventDefault();
     send(
-      "service_ne09bab",
-      "template_8gnfxp5",
+      'service_ne09bab',
+      'template_8gnfxp5',
       contactState,
-      "O_RJ2i4_VWfnQbVbv"
+      'O_RJ2i4_VWfnQbVbv',
     ).then(
       (result) => {
         console.log(result.text);
@@ -44,12 +44,12 @@ const Contact = () => {
       (error) => {
         setError(true);
         console.log(error.text);
-      }
+      },
     );
   };
 
   return (
-    <div id="contact" className="w-full lg:h-screen p-8">
+    <div id="contact" className="w-full lg:h-screen p-8 xl:mt-72">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <p className="text-xl tracking-widest uppercase text-[#f26901]">
           Contact

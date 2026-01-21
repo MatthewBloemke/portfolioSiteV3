@@ -1,7 +1,9 @@
-import React from "react";
-import kegTrackerImg from "../../public/assets/projects/kegtracker.png";
-import acImg from "../../public/assets/projects/acwtc.png";
-import ProjectItem from "./ProjectItem";
+import React from 'react';
+import kegTrackerImg from '../../public/assets/projects/kegtracker.png';
+import healthyConv from '../../public/assets/projects/healthyconversations.png';
+import sdm from '../../public/assets/projects/servedigitalmedia.png';
+import acImg from '../../public/assets/projects/acwtc.png';
+import ProjectItem from './ProjectItem';
 
 const Projects = () => {
   return (
@@ -15,14 +17,26 @@ const Projects = () => {
           <ProjectItem
             image={kegTrackerImg}
             title="Keg Tracker"
-            description="React JS, Node JS"
+            description="ReactJS, NextJS"
             projectUrl="/kegtracker"
           />
           <ProjectItem
             image={acImg}
             title="Animal Crossing"
-            description="React JS"
+            description="ReactJS"
             projectUrl="/acwtc"
+          />
+          <ProjectItem
+            image={sdm}
+            title="Serve Digital Media"
+            description="ReactJS, NextJS"
+            projectUrl="/sdm"
+          />
+          <ProjectItem
+            image={healthyConv}
+            title="Healthy Conversations"
+            description="ReactJS, NextJS"
+            projectUrl="/hc"
           />
         </div>
       </div>
