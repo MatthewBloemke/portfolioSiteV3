@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import React from 'react';
-import sdmImage from '../../public/assets/projects/servedigitalmedia.png';
+import lha from '../../public/assets/projects/lesterheatair.png';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
-const sdm = () => {
+const lesterheatair = () => {
   return (
     <div className="w-full ">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
@@ -12,12 +12,12 @@ const sdm = () => {
         <Image
           className="absolute z-1"
           fill
-          src={sdmImage}
+          src={lha}
           alt="/"
           style={{ objectFit: 'cover' }}
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Serve Digital Media</h2>
+          <h2 className="py-2">Lester Heat and Air</h2>
           <h3>ReactJS / NextJS</h3>
         </div>
       </div>
@@ -26,12 +26,17 @@ const sdm = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            This is a website I created for a local company. It is their
-            marketing website, created in NextJS, with some extra css animations
-            for added personality to the site
+            Designed and developed a responsive marketing website for Lester
+            Heat and Air, a family-owned HVAC company serving Kiowa County and
+            surrounding communities. Built with Next.js, the site focuses on
+            fast performance, mobile usability, and clear service information
+            for heating and air conditioning installation, repair, and
+            maintenance. The project emphasizes strong local credibility, simple
+            navigation, and clear calls-to-action to help convert visitors into
+            service inquiries.
           </p>
 
-          <a href="https://www.servedigitalmedia.vercel.app/" target="_blank">
+          <a href="https://www.lesterheatandair.com/" target="_blank">
             <button className="px-8 py-2 mt-4 ">Demo</button>
           </a>
         </div>
@@ -61,4 +66,4 @@ const sdm = () => {
   );
 };
 
-export default sdm;
+export default lesterheatair;

@@ -4,7 +4,7 @@ import healthyConv from '../../public/assets/projects/healthyconversations.png';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
-const kegtracker = () => {
+const hc = () => {
   return (
     <div className="w-full ">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
@@ -67,4 +67,4 @@ const kegtracker = () => {
   );
 };
 
-export default kegtracker;
+export default hc;

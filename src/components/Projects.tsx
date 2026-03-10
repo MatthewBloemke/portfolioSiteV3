@@ -3,6 +3,7 @@ import kegTrackerImg from '../../public/assets/projects/kegtracker.png';
 import healthyConv from '../../public/assets/projects/healthyconversations.png';
 import sdm from '../../public/assets/projects/servedigitalmedia.png';
 import acImg from '../../public/assets/projects/acwtc.png';
+import lha from '../../public/assets/projects/lesterheatair.png';
 import ProjectItem from './ProjectItem';
 
 const Projects = () => {
@@ -37,6 +38,12 @@ const Projects = () => {
             title="Healthy Conversations"
             description="ReactJS, NextJS"
             projectUrl="/hc"
+          />
+          <ProjectItem
+            image={lha}
+            title="Lester Heat and Air"
+            description="ReactJS, NextJS"
+            projectUrl="/lesterheatair"
           />
         </div>
       </div>
